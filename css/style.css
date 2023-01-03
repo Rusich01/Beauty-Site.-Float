@@ -199,17 +199,27 @@ body {
   border-radius: 30px;
   background: #f13c6e;
   margin: 15px auto;
+  padding: 0;
   text-align: center;
+  overflow: hidden;
 }
 .but > .buttun {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-  width: 100%;
   display: inline-block;
   text-align: center;
-  margin: 12px 0;
+  margin: 0;
+  padding: 12px 0;
+}
+.but:hover {
+  background-color: #ffffff;
+  color: #f13c6e;
+}
+.buttun:hover {
+  color: #f13c6e;
+  font-weight: 600;
 }
 .two-blocks {
   width: 1110px;
@@ -295,9 +305,13 @@ body {
   width: 170px;
   border: 1px solid #ffffff;
   border-radius: 30px;
+  overflow: hidden;
   position: absolute;
   top: 145px;
   left: 40px;
+}
+.butt-map:hover {
+  background: #ffffff;
 }
 .block-car a {
   display: inline-block;
@@ -305,6 +319,9 @@ body {
   width: 100%;
   color: #ffffff;
   text-decoration: none;
+}
+.block-car a:hover {
+  color: #f13c6e;
 }
 table {
   margin: 100px 0;
@@ -336,24 +353,28 @@ footer a {
   display: inline-block;
   list-style: none;
   width: 100px;
-  margin: 0 70px;
+  margin: 60px 70px 30px;
   line-height: 30px;
   text-align: center;
 }
-
-.conteiner-footer-top::after {
+.conteiner-footer-top > ul > li::after {
   content: "";
   display: block;
   height: 1px;
   clear: both;
   background: #e5e5e5;
 }
+.conteiner-footer-top > ul > li:hover::after {
+  content: "";
+  background: rgb(202 173 253);
+  cursor: pointer;
+}
 .conteiner-footer-midle li {
   display: inline-block;
   list-style: none;
   width: 90px;
   line-height: 28px;
-  margin: 0 75px;
+  margin: 60px 75px 30px;
 }
 .conteiner-footer-midle::after {
   content: "";
@@ -361,4 +382,52 @@ footer a {
   height: 1px;
   clear: both;
   background: #e5e5e5;
+}
+.conteiner-footer-bottom {
+  position: relative;
+}
+.footer-icons li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 20px;
+}
+.footer-icons {
+  margin-left: 60px;
+}
+.right-footer-logo {
+  position: absolute;
+  top: 0;
+  right: 0
+}
+.eclipce2,
+.eclipce {
+  position: relative;
+}
+
+.facebook {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  left: 12px;
+}
+.instagram {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  left: 12px;
+}
+.footer-lower-text {
+  background-color: #efefef;
+}
+.conteiner-text-footer {
+  width: 1110px;
+  margin: 0 auto;
+  background-color: #efefef;
+  color: #828282;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 25px 0;
+}
+.right-lower-footer-rwxt {
+  float: right;
 }
